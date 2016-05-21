@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.soloparaapasionados.groupapp.HorariosActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="7dp"
+        app:layout_collapseMode="pin"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="10dp">
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/lunes_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:clickable="true"
+                android:onClick="onUbicacionesClick"
+                card_view:cardCornerRadius="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/nameTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginStart="5dp"
+                        android:text="Lunes"
+                        android:textSize="30dp" />
+
+
+                    <ImageView
+                        android:id="@+id/lunesMananaImageView"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginLeft="120dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="1dp"
+                        android:src="@android:drawable/ic_lock_idle_alarm" />
+
+                    <ImageView
+                        android:id="@+id/lunesTardeImageView"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="1dp"
+                        android:src="@android:drawable/ic_lock_idle_alarm" />
+
+                    <ImageView
+                        android:id="@+id/lunesNocheImageView"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="1dp"
+                        android:src="@android:drawable/ic_lock_idle_alarm" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/martes_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:clickable="true"
+                android:onClick="onUbicacionesClick"
+                card_view:cardCornerRadius="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/martesTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginStart="5dp"
+                        android:text="Martes"
+                        android:textSize="30dp" />
+
+
+                    <ImageView
+                        android:id="@+id/martesMananaImageView"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="1dp"
+                        android:src="@android:drawable/ic_lock_idle_alarm" />
+
+                    <ImageView
+                        android:id="@+id/martesTardeImageView"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="1dp"
+                        android:src="@android:drawable/ic_lock_idle_alarm" />
+
+                    <ImageView
+                        android:id="@+id/martesNocheImageView"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="1dp"
+                        android:src="@android:drawable/ic_lock_idle_alarm" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/miercoles_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:clickable="true"
+                android:onClick="onUbicacionesClick"
+                card_view:cardCornerRadius="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/miercolesTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginStart="5dp"
+                        android:text="Miercoles"
+                        android:textSize="30dp" />
+
+
+                    <ImageView
+                        android:id="@+id/miercolesMananaImageView"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="1dp"
+                        android:src="@android:drawable/ic_lock_idle_alarm" />
+
+                    <ImageView
+                        android:id="@+id/miercolesTardeImageView"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="1dp"
+                        android:src="@android:drawable/ic_lock_idle_alarm" />
+
+                    <ImageView
+                        android:id="@+id/miercolesNocheImageView"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="1dp"
+                        android:src="@android:drawable/ic_lock_idle_alarm" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/jueves_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:clickable="true"
+                android:onClick="onUbicacionesClick"
+                card_view:cardCornerRadius="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/juevesTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginStart="5dp"
+                        android:text="Jueves"
+                        android:textSize="30dp" />
+
+
+                    <ImageView
+                        android:id="@+id/juevesMananaImageView"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="1dp"
+                        android:src="@android:drawable/ic_lock_idle_alarm" />
+
+                    <ImageView
+                        android:id="@+id/juevesTardeImageView"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="1dp"
+                        android:src="@android:drawable/ic_lock_idle_alarm" />
+
+                    <ImageView
+                        android:id="@+id/juevesNocheImageView"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="1dp"
+                        android:src="@android:drawable/ic_lock_idle_alarm" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/viernes_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:clickable="true"
+                android:onClick="onUbicacionesClick"
+                card_view:cardCornerRadius="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/viernesTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginStart="5dp"
+                        android:text="Viernes"
+                        android:textSize="30dp" />
+
+
+                    <ImageView
+                        android:id="@+id/viernesMananaImageView"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="1dp"
+                        android:src="@android:drawable/ic_lock_idle_alarm" />
+
+                    <ImageView
+                        android:id="@+id/viernesTardeImageView"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="1dp"
+                        android:src="@android:drawable/ic_lock_idle_alarm" />
+
+                    <ImageView
+                        android:id="@+id/viernesNocheImageView"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="1dp"
+                        android:src="@android:drawable/ic_lock_idle_alarm" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/sabado_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:clickable="true"
+                android:onClick="onUbicacionesClick"
+                card_view:cardCornerRadius="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/sabadoTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginStart="5dp"
+                        android:text="Sabado"
+                        android:textSize="30dp" />
+
+
+                    <ImageView
+                        android:id="@+id/sabadoMananaImageView"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="1dp"
+                        android:src="@android:drawable/ic_lock_idle_alarm" />
+
+                    <ImageView
+                        android:id="@+id/sabadoTardeImageView"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="1dp"
+                        android:src="@android:drawable/ic_lock_idle_alarm" />
+
+                    <ImageView
+                        android:id="@+id/sabadoNocheImageView"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="1dp"
+                        android:src="@android:drawable/ic_lock_idle_alarm" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/domingo_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:clickable="true"
+                android:onClick="onUbicacionesClick"
+                card_view:cardCornerRadius="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/domingoTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginStart="5dp"
+                        android:text="Domingo"
+                        android:textSize="30dp" />
+
+
+                    <ImageView
+                        android:id="@+id/domingoMananaImageView"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginLeft="80dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="1dp"
+                        android:src="@android:drawable/ic_lock_idle_alarm" />
+
+                    <ImageView
+                        android:id="@+id/domingoTardeImageView"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="1dp"
+                        android:src="@android:drawable/ic_lock_idle_alarm" />
+
+                    <ImageView
+                        android:id="@+id/domingoNocheImageView"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="1dp"
+                        android:src="@android:drawable/ic_lock_idle_alarm" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>
