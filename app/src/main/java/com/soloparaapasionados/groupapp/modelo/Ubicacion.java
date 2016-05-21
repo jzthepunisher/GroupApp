@@ -5,10 +5,12 @@ package com.soloparaapasionados.groupapp.modelo;
  */
 public class Ubicacion {
     public String codigo;
+    public String nombre;
     public String descripcion;
 
-    public Ubicacion(String codigo, String descripcion) {
+    public Ubicacion(String codigo, String descripcion, String nombre) {
         this.codigo = codigo;
         this.descripcion = descripcion;
+        this.nombre = nombre;
     }
 }

@@ -123,7 +123,7 @@
                     android:layout_marginStart="5dp"
                     android:layout_toEndOf="@+id/pictureImageView3"
                     android:layout_toRightOf="@+id/pictureImageView3"
-                    android:text="Privacidad"
+                    android:text="Notificaciones"
                     android:textSize="18sp"
                     android:textStyle="bold"/>
 
