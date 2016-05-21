@@ -24,7 +24,7 @@ public class MiPerfilActivity extends AppCompatActivity {
         CollapsingToolbarLayout collapser = (CollapsingToolbarLayout) findViewById(R.id.collapsingToolbar);
         collapser.setTitle(name); // Cambiar título
 
-        loadImageParallax(R.drawable.girl2);// Cargar Imagen
+        loadImageParallax(R.drawable.farruko);// Cargar Imagen
 
     }
 

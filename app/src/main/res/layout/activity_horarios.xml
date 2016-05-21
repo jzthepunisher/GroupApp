@@ -172,7 +172,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="1dp"
                         android:layout_marginStart="5dp"
-                        android:text="Miercoles"
+                        android:text="Miércoles"
                         android:textSize="30dp" />
 
 

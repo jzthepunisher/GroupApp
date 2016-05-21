@@ -5,10 +5,14 @@ package com.soloparaapasionados.groupapp.modelo;
  */
 public class Curso {
     public String codigo;
+    public String nombre;
     public String descripcion;
+    public int idcarrera;
 
-    public Curso(String codigo, String descripcion) {
+    public Curso(String codigo, String descripcion, String nombre, int idcarrera) {
         this.codigo = codigo;
         this.descripcion = descripcion;
+        this.nombre = nombre;
+        this.idcarrera = idcarrera;
     }
 }
