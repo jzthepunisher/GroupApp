@@ -26,29 +26,29 @@
             android:textStyle="bold" />
 
         <android.support.design.widget.TextInputLayout
-            android:id="@+id/inputLayoutCorreo"
+            android:id="@+id/emailTextInputLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-
             <EditText
-                android:id="@+id/etCorreo"
+                android:id="@+id/emailEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/correo_hint" />
+                android:hint="@string/correo_hint"
+                android:text="setfocusjz@hotmail.com"/>
         </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout
-            android:id="@+id/inputLayoutContrasena"
+            android:id="@+id/passwordTextInputLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp">
-
             <EditText
-                android:id="@+id/etContrasena"
+                android:id="@+id/passwordEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/contrasena_hint"
-                android:inputType="textPassword" />
+                android:inputType="textPassword"
+                android:text="123"/>
         </android.support.design.widget.TextInputLayout>
 
         <Button

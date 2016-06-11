@@ -9,8 +9,8 @@ import android.view.Menu;
 import android.view.View;
 import android.widget.ImageView;
 
-public class MiPerfilActivity extends AppCompatActivity {
-
+public class MyProfileActivity extends AppCompatActivity {
+    private Long userID;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,6 +25,11 @@ public class MiPerfilActivity extends AppCompatActivity {
         collapser.setTitle(name); // Cambiar título
 
         loadImageParallax(R.drawable.farruko);// Cargar Imagen
+
+        // Get isntance
+        if (getIntent().getStringExtra("userID") != null) {
+            userID = Long.valueOf(getIntent().getStringExtra("userID"));
+        }
 
     }
 
@@ -59,5 +64,10 @@ public class MiPerfilActivity extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_registro_curso, menu);
         return true;
+    }
+
+    public void onClick_personalInformationTextView(View view) {
+
+
     }
 }

@@ -42,12 +42,13 @@ public class RegisterCourseActivity extends AppCompatActivity {
 
 
     public void inicializarData() {
+
         cursos = new ArrayList<>();
-        cursos.add(new Curso("01", "Calculo 1"));
-        cursos.add(new Curso("01", "Calculo 2"));
-        cursos.add(new Curso("01", "Matematica Basica"));
-        cursos.add(new Curso("01", "Fisica 1"));
-        cursos.add(new Curso("01", "Fisica 2"));
+        cursos.add(new Curso("01", "Calculo 1","nombre 1 ",2));
+        cursos.add(new Curso("01", "Calculo 2","nombre 1 ",2));
+        cursos.add(new Curso("01", "Matematica Basica","nombre 1 ",2));
+        cursos.add(new Curso("01", "Fisica 1","nombre 1 ",2));
+        cursos.add(new Curso("01", "Fisica 2","nombre 1 ",2));
 
     }
 

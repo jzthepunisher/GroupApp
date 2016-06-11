@@ -40,12 +40,12 @@ public class UbicacionesActivity extends AppCompatActivity {
 
     public void inicializarData() {
         ubicaciones = new ArrayList<>();
-        ubicaciones.add(new Ubicacion("01", "Sede Monterrico"));
-        ubicaciones.add(new Ubicacion("02", "Sede San Borja"));
-        ubicaciones.add(new Ubicacion("03", "Sede San Isidro"));
-        ubicaciones.add(new Ubicacion("04", "Sede San Miguel"));
-        ubicaciones.add(new Ubicacion("05", "Sede Villa"));
-        ubicaciones.add(new Ubicacion("06", "Campus San Miguel"));
+        ubicaciones.add(new Ubicacion("01", "Sede Monterrico","nombre 1"));
+        ubicaciones.add(new Ubicacion("02", "Sede San Borja","nombre 1"));
+        ubicaciones.add(new Ubicacion("03", "Sede San Isidro","nombre 1"));
+        ubicaciones.add(new Ubicacion("04", "Sede San Miguel","nombre 1"));
+        ubicaciones.add(new Ubicacion("05", "Sede Villa","nombre 1"));
+        ubicaciones.add(new Ubicacion("06", "Campus San Miguel","nombre 1"));
 
     }
 }

@@ -46,4 +46,12 @@
     <string name="celular_hint">Celular</string>
     <string name="continuar_btn_txt">Continuar</string>
     <string name="thumbnail">Llamar</string>
+
+
+    <!-- Carreras -->
+    <string-array name="profession_array">
+        <item>Ingienria de Sistemas</item>
+        <item>Marketing</item>
+        <item>Telecomunicaciones</item>
+    </string-array>
 </resources>

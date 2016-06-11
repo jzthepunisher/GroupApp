@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.soloparaapasionados.groupapp.MiPerfilActivity">
+    tools:context=".MyProfileActivity">
 
     <!--Page content-->
     <include layout="@layout/nested_scroll_view" />

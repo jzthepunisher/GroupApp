@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.soloparaapasionados.groupapp">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -26,7 +28,7 @@
         <activity android:name=".RegisterCourseActivity" />
         <activity android:name=".UbicacionesActivity" />
 
-        <activity android:name=".MiPerfilActivity"
+        <activity android:name=".MyProfileActivity"
             android:theme="@style/AppTheme.TranslucentSystemBars"/>
 
         <activity android:name=".PreferenciasActivity" />
